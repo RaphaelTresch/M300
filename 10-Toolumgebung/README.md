@@ -504,6 +504,9 @@ Damit keine Dateien der virtuellen Maschinen dem Cloud-Repository hinzugefügt w
       },
     ```
 5. Änderungen speichern und die Einstellungen schliessen
+
+Wenn alles angepasst wurde, sollte es wie folgt aussehen
+![](Screenshots/ignore.jpg)
    
 Nun sollten keine Dateien mit den Endungen .git / .svn / .hg / .vagrant / .DS_store hochgeladen werden. Wie man die Änderungen innerhalb von Visual Studio Code richtig pusht, wird im nachfolgenden Abschnitt erklärt. 
 
