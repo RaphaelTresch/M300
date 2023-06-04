@@ -55,6 +55,7 @@ Folgende Arbeiten müssen gemacht werden:
 ***
 1. Auf www.github.com ein Benutzerkonto erstellen (Angabe von Username, E-Mail und Passwort)
 2. E-Mail zur Verifizierung des Kontos bestätigen und anschliessend auf GitHub anmelden
+   Es Sollte dann wie auf folgendem Bild aussehen
 ![](Screenshots/my_git_profile.jpg)
 
 
@@ -67,6 +68,9 @@ Folgende Arbeiten müssen gemacht werden:
 5. Radio-Button bei <strong>Public</strong> belassen
 6. Haken bei <strong>Initialize this repository with a README</strong> setzen
 7. Auf <strong>Create repository</strong> klicken
+
+So sieht nun mein Profil mit meinem ersten Repository aus
+![](Screenshots/my_repository.jpg)
    
 ### SSH-Key erstellen (lokal)
 ***
