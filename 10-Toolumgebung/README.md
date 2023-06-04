@@ -55,6 +55,7 @@ Folgende Arbeiten müssen gemacht werden:
 ***
 1. Auf www.github.com ein Benutzerkonto erstellen (Angabe von Username, E-Mail und Passwort)
 2. E-Mail zur Verifizierung des Kontos bestätigen und anschliessend auf GitHub anmelden
+![](Screenshots/my_git_profile.jpg)
 
 
 ### Repository erstellen
