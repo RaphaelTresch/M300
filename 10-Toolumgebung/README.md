@@ -477,6 +477,8 @@ Dazu müssen folgende Anweisungen befolgt werden:
 3. Auf `Install` klicken und anschliessend auf `Reload`, um die Extension in den Arbeitsbereich zu laden.
 4. Nun können die Extensions angewendet werden. Für Markdown ist [diese Liste](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet/"github.com") sehr hilfreich.
 
+![](Screenshots/Extensions.jpg)
+
 
 ### Einstellungen anpassen
 ***
