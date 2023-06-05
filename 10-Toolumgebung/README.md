@@ -520,13 +520,15 @@ Nun sollten keine Dateien mit den Endungen .git / .svn / .hg / .vagrant / .DS_st
 6. Bei den 3 Punkten (...) die Funktion **Push** aufrufen
 7. Warten, bis Dateien vollständig gepusht wurden
 
+![](Screenshots/commit_and_push.jpg)
+
 ***
 ### Alternative Editoren
 
 #### Atom IO
 
 https://atom.io/  
-Atom ist ein Open-Source-Texteditor, der als integrierte Entwicklungsumgebung für eine grosse Auswahl an Programmiersprachen verwendet werden kann, der dank des durchgehenden Supports der Git-Community viele Möglichkeiten eröffnet.
+Atom ist ein Open-Source-Texteditor, der als integrierte Entwicklungsumgebung für eine grosse Auswahl an Programmiersprachen verwendet werden kann, der dank des durchgehenden Supports der Git-Community viele  Möglichkeiten eröffnet.
 
 Alle Features eines guten Editors sind enthalten, wie Syntax-Highlighter, automatische Erkennung von Sprachen, automatische Textvervollständigung, die Möglichkeit mehrere Panels zu verwenden und Projekte in verschiedenen Ordnern zu sichern, Support für Snippets und eine leistungsstarke Suche. Der grösste Vorteil ist die Modularität der Umgebung (Features können durch  zusätzliche Pakete hinzugefügt werden). Es inkludiert auch ein Steuersystem für Git, mit dem der Inhalte über die GitHub-Plattform veröffentlicht wird.
 
