@@ -19,7 +19,7 @@ Diese Wikiseite zeigt mein Vorgehen bei der Erstellung von Vagrant files um die 
     ```
 
 5. Wenn die VM erstellt ist, kann man sich mit folgendem Befehl per SSH auf die VM verbinden
-       ```Shell
+    ```Shell
        $  vagrant ssh
     ```
 
