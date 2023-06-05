@@ -1,0 +1,28 @@
+Vagrant.configure("2") do |config|
+  config.vm.define "TestWebserverVM"  # Benennt die VM als "TestWebserverVM"
+
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.provider "virtualbox" do |vb|
+    vb.gui = true  # Aktiviert die grafische Benutzeroberfläche
+  end
+  
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+  
+  config.vm.provision "shell", inline: <<-SHELL
+    # Benutzer hinzufügen
+    useradd -m -s /bin/bash -p $(echo Raphael | openssl passwd -1 -stdin) Raphael
+    
+    # Webserver (Apache) installieren
+    apt-get update
+    apt-get install -y apache2
+    
+    # Leeres HTML-Indexfile erstellen
+    echo "<html><body><h1></h1></body></html>" > /var/www/html/index.html
+    
+    # Start des Webservers
+    systemctl start apache2
+    
+    # Automatisches Starten des Webservers beim Systemstart
+    systemctl enable apache2
+  SHELL
+end
