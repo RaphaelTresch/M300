@@ -1,10 +1,12 @@
-M300 - 20 Infrastruktur-Automatisierung
+M300 - 20 Mein Vorgehen
 =======================================
 
-Diese Wikiseite zeigt die theoretischen Inhalte beim Einrichten einer Dynamischen Infrastruktur-Plattform (Private Cloud) auf Basis von konsistenten und wiederholbaren Definitionen.
+Diese Wikiseite zeigt mein Vorgehen bei der Erstellung von Vagrant files um die erstellung von VM's zu Automatisieren.
 
-#### Lernziele
+#### Vorgehen mit Vagrant
 
-Sie können eine Dynamischen Infrastruktur-Plattform (Private Cloud) einrichten, auf der Virtuelle Maschinen auf Basis von konsistenten und wiederholten Definitionen automatisiert erstellt werden können.
+1. Erstellen eines Ordners, in dem das Vagrant file gespeichert werden soll
+2. In diesem Ordner öffnen wir nun die Git bash Konsole
+3. 
 
 #### Voraussetzungen
