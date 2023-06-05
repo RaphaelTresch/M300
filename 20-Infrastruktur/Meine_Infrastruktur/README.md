@@ -15,9 +15,13 @@ Diese Wikiseite zeigt mein Vorgehen bei der Erstellung von Vagrant files um die 
 4. Nun möchten wie den Erstellungsprozess mit folgendem Befehl starten. Dass Image wird nun aus dem Internet heruntergeladen, sovern es noch nicht lokal auf dem Rechner ist. Dabei werden alle im Vagrant file konfigurierten Einstellungen berücksichtigt.
    
     ```Shell
-       $  vagrant init ubuntu/xenial64
+       $  vagrant up --provider virtualbox
     ```
 
+5. Wenn die VM erstellt ist, kann man sich mit folgendem Befehl per SSH auf die VM verbinden
+       ```Shell
+       $  vagrant ssh
+    ```
 
 
 #### Voraussetzungen
