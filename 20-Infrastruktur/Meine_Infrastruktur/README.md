@@ -23,7 +23,7 @@ Diese Wikiseite zeigt mein Vorgehen bei der Erstellung von Vagrant files um die 
        $  vagrant ssh
     ```
 
-Folgend sind wichtige Befehle im zusammenhang mit Vagrant
+Folgend sind wichtige Befehle im Zusammenhang mit Vagrant
 
 
 | Befehl                    | Beschreibung                                                      |
@@ -37,4 +37,5 @@ Folgend sind wichtige Befehle im zusammenhang mit Vagrant
 | `vagrant destroy`         | Stoppt die Virtuelle Maschine und zerstört sie.                   |
 
 
-#### Voraussetzungen
+#### Erste angepasste VM mit Vagrant
+Ich habe nun das Vagrant file angepasst, damit ein Webserver installiert wird, mit einer Blanken Website. Dies ist im ersten Bild zusehen. Danach habe ich das Vagrant fiel weiterangepasst, dass auch etwas auf der Website angezeigt wird. Dies ist im zweiten Bild zu sehen
