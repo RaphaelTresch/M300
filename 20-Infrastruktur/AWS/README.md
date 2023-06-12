@@ -1,8 +1,6 @@
 ![](../images/AWS_36x36.png "AWS Cloud") 05 - AWS Cloud
 ======
 
-> [⇧ **Nach oben**](#inhaltsverzeichnis)
-
 ### Grundlagen
 ***
 
