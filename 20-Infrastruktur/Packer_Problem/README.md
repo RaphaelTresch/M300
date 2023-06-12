@@ -1,7 +1,7 @@
 ![](../images/Packer_36x36.png "Packer") Packerproblem bei Windows
 ======
 
-***Probleme mit Packer und Windows**
+**Probleme mit Packer und Windows**
 
 Packer kann in Zusammenarbeit mit Windows zu Problemen führen. Es kann also sein, das Packker nur auf einem Linux oder MAC OS läuft. Folgend ist aber die Anleitung, wie man Packer installieren und nutzen kann.
 
