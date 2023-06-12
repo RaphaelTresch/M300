@@ -293,6 +293,8 @@ Weiter geht es mit den [Beispielen](#-09---beispiele)
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
+***Wichtig zu erwähnen ist, das Packer bei der Aktuellen Windwos Version zu Problemen Führt, jedoch folgt gleich trozedem die Anleitung, wie es gehen würde***
+
 Packer ist ein Tool zur Erstellung von Images bzw. Boxen für eine Vielzahl von Dynamic Infrastructure Platforms mittels einer Konfigurationsdatei.
 
 **Wichtig:** Images bzw. Boxen sind Vorlagen aus denen Virtuelle Maschinen (VMs) entstehen.
