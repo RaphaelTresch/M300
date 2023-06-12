@@ -41,3 +41,7 @@ Folgend sind wichtige Befehle im Zusammenhang mit Vagrant
 Ich habe nun das Vagrant file angepasst, damit ein Webserver installiert wird, mit einer Blanken Website. Dies ist im ersten Bild zusehen. Danach habe ich das Vagrant fiel weiterangepasst, dass auch etwas auf der Website angezeigt wird. Dies ist im zweiten Bild zu sehen.
 ![](Screenshots/first_webserver.jpg)
 ![](Screenshots/firstwebsite.jpg)
+
+### Netzwerkplan
+Hier ein vereinfachter Netzwerkplan
+![](Screenshots/plan.jpg)
