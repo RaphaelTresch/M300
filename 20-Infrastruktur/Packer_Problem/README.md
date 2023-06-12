@@ -1,64 +1,9 @@
 ![](../images/Packer_36x36.png "Packer") Packerproblem bei Windows
 ======
 
-***Wichtig zu erwähnen ist, das Packer bei der Aktuellen Windwos Version zu Problemen Führt, jedoch folgt gleich trozedem die Anleitung, wie es gehen würde***
+***Probleme mit Packer und Windows**
 
-Packer ist ein Tool zur Erstellung von Images bzw. Boxen für eine Vielzahl von Dynamic Infrastructure Platforms mittels einer Konfigurationsdatei.
-
-**Wichtig:** Images bzw. Boxen sind Vorlagen aus denen Virtuelle Maschinen (VMs) entstehen.
-
-### Funktionsweise
-***
-
-Packer wird über die Kommandozeile (CLI) bedient.
-
-Der wichtigste Befehle ist `packer build` um ein Image zu erstellen.
-
-Die Konfiguration erfolgt im JSON Format. Hier ein Beispiel:
-```JSON
-    {
-      "provisioners": [
-        {
-          "type": "shell",
-          "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
-          "override": {
-            "virtualbox-iso": {
-              "scripts": [
-                "scripts/server/base.sh",
-              ]
-            }
-          }
-        }
-      ],
-      "builders": [
-        {
-          "type": "virtualbox-iso",
-      "boot_command": [
-        " preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ubuntu-preseed.cfg<wait>",
-      ],
-        }
-      ],
-      "post-processors": [
-        {
-          "type": "vagrant",
-          "override": {
-            "virtualbox": {
-              "output": "ubuntu-server-amd64-virtualbox.box"
-            }
-          }
-        }
-      ]      
-    }
-```
-
-**Provisioning** <br>
-Auch bei Packer steht Provisioning für Anweisungen an ein anderes Programm (z.B. eine Shell wie Bash).
-
-**Builder** <br>
-Die Builder erstellen ein Image für eine bestimmte dynamische Infrastruktur-Plattform (wie z.B. VirtualBox).
-
-**Post-processors** <br>
-Sind Bestandteile von Packer, die das Ergebnis eines Builders oder eines anderen Post-Prozessor übernehmen, um damit ein neues Artefakt zu erstellen. 
+Packer kann in Zusammenarbeit mit Windows zu Problemen führen. Es kann also sein, das Packker nur auf einem Linux oder MAC OS läuft. Folgend ist aber die Anleitung, wie man Packer installieren und nutzen kann.
 
 
 ### Installation
