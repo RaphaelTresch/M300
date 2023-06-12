@@ -28,7 +28,7 @@ Es gibt vorbereitete VM-Images von AWS, welche einfach über die EC2-Konsole ins
 ***
 
 **Vorbereitungen** <br>
-1. Zuerst ist das AWS Vagrant Plugin zu installieren:
+1. Zuerst ist das AWS Vagrant Plugin zu installieren(in der AWS Console):
 ```Shell
     $ vagrant plugin install vagrant-aws
 ```
