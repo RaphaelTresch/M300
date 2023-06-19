@@ -5,6 +5,27 @@
 
 Packer kann in Zusammenarbeit mit Windows zu Problemen führen. Es kann also sein, das Packker nur auf einem Linux oder MAC OS läuft. Folgend ist aber die Anleitung, wie man Packer installieren und nutzen kann.
 
+*** Bei Problemen mit der Installation Foglendes testen ***
+Zuerst müssen wir das paket Unzip installieren
+```Shell
+$ sudo apt-get install unzip
+```
+Danach laden wir Packer von der offiziellen website herunter, Link dazu hier [Hier](https://developer.hashicorp.com/packer/downloads)
+
+```Shell
+$ wget https://www.packer.io/downloads
+```
+
+Nun müssen wir die Datei entpacken
+```Shell
+$ sudo unzip packer_*_linux_amd64.zip -d /usr/local/bin/
+```
+
+Um Packer nun zu starten, geht man im Verzeichnis einen Ort zurück und führt die .json datei aus
+```Shell
+$ Packer build ubuntu-18.04-vagrant.json
+```a
+
 
 ### Installation
 ***
