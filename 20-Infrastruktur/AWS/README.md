@@ -36,6 +36,9 @@ Es gibt vorbereitete VM-Images von AWS, welche einfach über die EC2-Konsole ins
 ```Shell
     $ vagrant box add dummy https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box
 ```
+### Problem beim installieren des Vagrant Plugin
+Das installieren des Vagrant Plugin kan auf Windows Systemen zu Problemen führen. Um dies zu beheben, muss man dies in einer Linux VM machen.
+
 
 Das Dummy-Image wird als Stellvertreter für das effektive Image in der Amazon Cloud gebraucht.
 
