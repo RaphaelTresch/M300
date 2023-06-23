@@ -146,6 +146,34 @@ Die Weiterleitungen sind z.B. in `sites-enabled/001-reverseproxy.conf` eingetrag
     ProxyPassReverse /master http://master
 ```
 
+Um Dies zu Vereinfachen, habe ich ein Vagrantfile erstellt, welches beides macht folgend der code 
+```Shell
+Vagrant.configure("2") do |config|
+
+    config.vm.box = "ubuntu/xenial64"
+
+    config.vm.hostname = "firewall"
+
+    config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+    
+    config.vm.provision "shell", inline: <<-SHELL
+        sudo apt-get update
+        sudo apt-get install -y apache2
+	    sudo apt-get install ufw
+	    sudo ufw allow 80/tcp
+	    sudo ufw allow from 192.168.1.117 to any port 22
+	    sudo ufw allow from 10.0.2.15 to any port 3306
+        sudo ufw allow ssh
+        sudo ufw --force enable
+        sudo apt-get install libapache2-mod-proxy-html
+	    sudo apt-get install libxml2-dev
+	    sudo a2enmod proxy
+	    sudo a2enmod proxy_html
+	    sudo a2enmod proxy_http
+  SHELL
+end
+```
+
 
 ![](../images/Benutzer-_und_Rechteverwaltung_36x36.png "Benutzer- & Rechteverwaltung") 02 - Benutzer- & Rechteverwaltung
 ======
