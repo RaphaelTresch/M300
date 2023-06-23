@@ -436,7 +436,7 @@ Nachfolgend wird die VM mit einem bereits abgeänderten File bzw. VM aus dem M30
     ``` 
 4. Webbrowser in der VM öffnen und prüfen, ob der Standard-Content des Webservers unter "http://127.0.0.01:8080" (localhost) erreichbar ist
 5. Im Ordner `/web` die Hauptseite `index.html` editieren bzw. durch eine andere ersetzen (z.B. HTML5up-Themplate) und das Resultat überprüfen
-6. Abschliessend kann die VM wieder gelöscht werden:
+6. Abschliessend  kann die VM wieder gelöscht werden:
     ```Shell
       $ vagrant destroy -f
     ```
