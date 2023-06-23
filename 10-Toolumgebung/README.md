@@ -441,7 +441,8 @@ Nachfolgend wird die VM mit einem bereits abgeänderten File bzw. VM aus dem M30
       $ vagrant destroy -f
     ```
 7. Vagrant ist nun komplett einsatzfähig!
-![](Screenshots/vagrant.jpg)
+![](Screenshots/vagrant.jpg) <br>
+![](Screenshots/working_vm.jpg)
 
 ![](../images/VisualStudioCode_36x36.png "Visual Studio Code") 05 - Visual Studio Code
 ======
