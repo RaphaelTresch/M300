@@ -101,7 +101,28 @@ Werden keine Ausgehenden Verbindungen benötigt oder nur bestimmte (z.B. ssh) k�
     $ sudo ufw deny out to any
     $ sudo ufw allow out 22/tcp 
 ```
+Um alles in einem zu machen habe ich ein Vagrant File erstellt
+```Shell
+  Vagrant.configure("2") do |config|
 
+     config.vm.box = "ubuntu/xenial64"
+
+     config.vm.hostname = "firewallM300Tresch"
+
+     config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+
+     config.vm.provision "shell", inline: <<-SHELL
+        sudo apt-get update
+        sudo apt-get install -y apache2
+	    sudo apt-get install ufw
+	    sudo ufw allow 80/tcp
+	    sudo ufw allow from 192.168.1.117 to any port 22
+	    sudo ufw allow from 10.0.2.15 to any port 3306
+        sudo ufw allow ssh
+        sudo ufw --force enable	
+  SHELL
+end
+```
 
 ### Reverse Proxy
 ***
@@ -119,6 +140,33 @@ Anschliessend die Module in Apache aktivieren:
     $ sudo a2enmod proxy
     $ sudo a2enmod proxy_html
     $ sudo a2enmod proxy_http 
+```
+Auch hier habe ich ein Vagrant file erstellt, welches alles gleich zu beginn macht
+```Shell
+Vagrant.configure("2") do |config|
+
+    config.vm.box = "ubuntu/xenial64"
+
+    config.vm.hostname = "firewallandReverseProxyM300Tresch"
+
+    config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+    
+    config.vm.provision "shell", inline: <<-SHELL
+        sudo apt-get update
+        sudo apt-get install -y apache2
+	    sudo apt-get install ufw
+	    sudo ufw allow 80/tcp
+	    sudo ufw allow from 192.168.1.117 to any port 22
+	    sudo ufw allow from 10.0.2.15 to any port 3306
+        sudo ufw allow ssh
+        sudo ufw --force enable
+        sudo apt-get install libapache2-mod-proxy-html
+	    sudo apt-get install libxml2-dev
+	    sudo a2enmod proxy
+	    sudo a2enmod proxy_html
+	    sudo a2enmod proxy_http
+  SHELL
+end
 ```
 
 Die Datei /etc/apache2/apache2.conf wie folgt ergänzen:
@@ -144,34 +192,6 @@ Die Weiterleitungen sind z.B. in `sites-enabled/001-reverseproxy.conf` eingetrag
     # Weiterleitungen master
     ProxyPass /master http://master
     ProxyPassReverse /master http://master
-```
-
-Um Dies zu Vereinfachen, habe ich ein Vagrantfile erstellt, welches beides macht folgend der code 
-```Shell
-Vagrant.configure("2") do |config|
-
-    config.vm.box = "ubuntu/xenial64"
-
-    config.vm.hostname = "firewall"
-
-    config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
-    
-    config.vm.provision "shell", inline: <<-SHELL
-        sudo apt-get update
-        sudo apt-get install -y apache2
-	    sudo apt-get install ufw
-	    sudo ufw allow 80/tcp
-	    sudo ufw allow from 192.168.1.117 to any port 22
-	    sudo ufw allow from 10.0.2.15 to any port 3306
-        sudo ufw allow ssh
-        sudo ufw --force enable
-        sudo apt-get install libapache2-mod-proxy-html
-	    sudo apt-get install libxml2-dev
-	    sudo a2enmod proxy
-	    sudo a2enmod proxy_html
-	    sudo a2enmod proxy_http
-  SHELL
-end
 ```
 
 
