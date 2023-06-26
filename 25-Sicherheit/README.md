@@ -156,7 +156,7 @@ Vagrant.configure("2") do |config|
         sudo apt-get install -y apache2
 	    sudo apt-get install ufw
 	    sudo ufw allow 80/tcp
-	    sudo ufw allow from 192.168.1.117 to any port 22
+	    sudo ufw allow from 192.168.56.1 to any port 22
 	    sudo ufw allow from 10.0.2.15 to any port 3306
         sudo ufw allow ssh
         sudo ufw --force enable
@@ -168,6 +168,7 @@ Vagrant.configure("2") do |config|
   SHELL
 end
 ```
+### Es kann sein, dass ein Authentication Fehler von SSH auftritt, dazu die VM löschen und erneut Vagrant up ausführen
 
 Die Datei /etc/apache2/apache2.conf wie folgt ergänzen:
 ```Shell
