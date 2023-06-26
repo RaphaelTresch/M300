@@ -43,6 +43,8 @@ $ Packer build ubuntu-18.04-vagrant.json
     
     /Users[Dein-Benutzername]/packer
 ```
+![](Screenshots/instsallandfoldercreate.jpg)
+
 4. Entpackte Datei `packer` in das erstelltes Verzeichnis kopieren
 ```Shell
     $ cp packer ~/packer
@@ -78,6 +80,7 @@ $ Packer build ubuntu-18.04-vagrant.json
         validate    check that a template is valid
         version     Prints the Packer version
 ```
+![](Screenshots/installedpacker.jpg)
 7. Terminal (*Bash*) wieder schliessen & mit dieser Dokumentation fortfahren ...
    
 ### Image erstellen
