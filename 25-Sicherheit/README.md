@@ -169,7 +169,9 @@ Vagrant.configure("2") do |config|
 end
 ```
 ### Es kann sein, dass ein Authentication Fehler von SSH auftritt, dazu die VM löschen und erneut Vagrant up ausführen
-
+Um zu beweisen, dass das System bei mir läuft, hier die Screenshots
+![](screenshots/curl-f.jpg)
+![](screenshots/conffile.jpg)
 Die Datei /etc/apache2/apache2.conf wie folgt ergänzen:
 ```Shell
     ServerName localhost 
