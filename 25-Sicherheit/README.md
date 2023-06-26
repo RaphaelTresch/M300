@@ -141,7 +141,7 @@ Anschliessend die Module in Apache aktivieren:
     $ sudo a2enmod proxy_html
     $ sudo a2enmod proxy_http 
 ```
-Auch hier habe ich ein Vagrant file erstellt, welches alles gleich zu beginn macht
+Auch hier habe ich ein Vagrant file erstellt, welches alles gleich zu beginn macht. Somit ist es eine Firewall und reverse Proxy
 ```Shell
 Vagrant.configure("2") do |config|
 
