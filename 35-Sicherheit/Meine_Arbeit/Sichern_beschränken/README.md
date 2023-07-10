@@ -55,7 +55,7 @@ docker run -p 8080:8080 beschraenkensichern
 
 ### Kontrolle
 
-Um nun auch sicher zu gehen, dass die Website erreichbar ist, werden wir  http://localhost:8080 versuchen zu öffnen
+Um nun auch sicher zu gehen, dass die Website erreichbar ist, werden wir  http://localhost:8080 versuchen zu öffnen.
 
 ![](Screenshots/Sichern3.jpg)
 
