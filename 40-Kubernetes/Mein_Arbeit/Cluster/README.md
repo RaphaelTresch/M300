@@ -34,7 +34,7 @@ kubectl port-forward service/worker-service 8081:80
 ![](Screenshots/cluster3.jpg)
 
 ### Testprotokoll
-| Nr | Testfall | Erwartetes Ergebnis | Tatsägchliches Ergebnis | Abgenommen? |
+| Nr | Testfall | Erwartetes Ergebnis | Tatsächliches Ergebnis | Abgenommen? |
 | -------- | -------- | -------- | -------- | -------- |
 | 1 | Funktionalität | Nach ausführen von dem .yaml file ist dies in Docker ersichtlich | Es ist alles ersichtlich  | Ja |
 | 2 | Funktionalität | Website ist unter http://localhost:8080 erreichbar | Ist erreichbar | Ja |

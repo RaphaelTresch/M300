@@ -60,7 +60,7 @@ Um nun auch sicher zu gehen, dass die Website erreichbar ist, werden wir  http:/
 ![](Screenshots/Sichern3.jpg)
 
 ### Testprotokoll
-| Nr | Testfall | Erwartetes Ergebnis | Tatsägchliches Ergebnis | Abgenommen? |
+| Nr | Testfall | Erwartetes Ergebnis | Tatsächliches Ergebnis | Abgenommen? |
 | -------- | -------- | -------- | -------- | -------- |
 | 1 | Funktionalität | Es wird ein Docker Image erstellt | Es wird ein Docker Image erstellt  | Ja |
 | 2 | Funktionalität | Es wird ein Container erstellt | Es wird ein Container erstellt | Ja |

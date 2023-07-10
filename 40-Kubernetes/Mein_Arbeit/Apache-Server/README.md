@@ -25,7 +25,7 @@ kubectl delete -f Apache.yaml
 
 ### Kontrolle
 
-Um nun auch sicher zu gehen, dass die Website erreichbar ist, werden wir  http://localhost:30080 versuchen zu öffnen
+Um nun auch sicher zu gehen, dass die Website erreichbar ist, werden wir  http://localhost:30080 versuchen zu öffnen.
 
 ![](Screenshots/apache3.jpg)
 
