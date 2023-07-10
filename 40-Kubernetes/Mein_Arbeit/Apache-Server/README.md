@@ -32,7 +32,7 @@ Um nun auch sicher zu gehen, dass die Website erreichbar ist, werden wir  http:/
 ### Testprotokoll
 | Nr | Testfall | Erwartetes Ergebnis | Tatsägchliches Ergebnis | Abgenommen? |
 | -------- | -------- | -------- | -------- | -------- |
-| 1 | Funktionalität | Nach ausführen von dem .yaml file ist dies in Docker ersichtlich | Es ist all  | Ja |
+| 1 | Funktionalität | Nach ausführen von dem .yaml file ist dies in Docker ersichtlich | Es ist alles ersichtlich  | Ja |
 | 2 | Funktionalität | Durch den löschbefehl wird der Apache Server gelöscht  | Apache Server wurde gelöscht | Ja |
 | 3 | Funktionalität | Man kann die Lokalhost adresse unter https://localhost:30080 erreichen | Man kann die Lokalhost adresse unter https://localhost:30080 erreichen | Ja |
 | 4 | Replizierbarkeit | Gleiches file kann auf meinem Privaten PC gestartet werden | Wird auf Privatem PC gestartet | Ja |
