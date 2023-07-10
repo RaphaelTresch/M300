@@ -45,5 +45,5 @@ Kontrollieren muss man natürlich auch, ob die Website funktioniert, folgend der
 ### Testprotokoll
 | Nr | Testfall | Erwartetes Ergebnis | Tatsägchliches Ergebnis | Abgenommen? |
 | -------- | -------- | -------- | -------- | -------- |
-| 1 | Website ist unter  | http://localhost:8080 erreichbar | Website ist erreichbar | Ja |
+| 1 | Funktionalität | Website ist unter http://localhost:8080 erreichbar | Website ist erreichbar | Ja |
 | 2 | Replizierbarkeit | Gleiches file kann auf meinem Privaten PC gestartet werden | Wird auf Privatem PC gestartet | Ja |
