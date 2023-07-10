@@ -15,13 +15,13 @@ Durch die Verwendung dieses Dockerfiles und die Konfiguration des CMD-Befehls wi
 ## Erstelle ein Image
 
 ```Script
-docker build -t mein-image .
+docker build -t protueb .
 ```
 ![](Screenshots/protueb1.jpg)
 ## Erstelle ein Container
 
 ```Script
-docker run -p 8080:8080 imagename
+docker run -p 8080:8080 protueb
 ```
 ![](Screenshots/protueb2.jpg)
 

@@ -30,7 +30,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello, World!"
+    return "Hello, World! M300 Tresch"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
@@ -43,13 +43,13 @@ Durch die Kombination dieser Sicherheitsmaßnahmen, wie der Verwendung eines sch
 ## Erstelle ein Image
 
 ```Script
-docker build -t mein-image .
+docker build -t beschraenkensichern .
 ```
 ![](Screenshots/Sichern1.jpg)
 ## Erstelle ein Container
 
 ```Script
-docker run -p 8080:8080 imagename
+docker run -p 8080:8080 beschraenkensichern
 ```
 ![](Screenshots/Sichern2.jpg)
 
