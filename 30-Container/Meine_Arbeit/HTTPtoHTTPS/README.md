@@ -41,14 +41,14 @@ RUN echo '<Directory /var/www/html>' >> /etc/apache2/sites-available/default-ssl
 ## Erstelle ein Image
 
 ```Script
-docker build -t mein-image .
+docker build -t httptohttps .
 ```
 ![](Screenshots/httptohttps1.jpg)
 
 ## Erstelle ein Container
 
 ```Script
-docker run -p 80:80 -p 443:443 -d image-name
+docker run -p 80:80 -p 443:443 -d httptohttps
 ```
 ![](Screenshots/httptohttps2.jpg)
 
@@ -59,7 +59,7 @@ Kontrollieren muss man natürlich auch, ob die Website funktioniert und auch als
 ![](Screenshots/httptohttps4.jpg)
 
 ### Testprotokoll
-| Nr | Testfall | Erwartetes Ergebnis | Tatsägchliches Ergebnis | Abgenommen? |
+| Nr | Testfall | Erwartetes Ergebnis | Tatsächliches Ergebnis | Abgenommen? |
 | -------- | -------- | -------- | -------- | -------- |
 | 1 | Funktionalität | Website ist unter http://localhost erreichbar | Website ist erreichbar | Ja |
 | 2 | Funktionalität | Beim Aufrufen der Website kommt ein Anmeldefenster| Anmeldefenster erscheint | Ja |

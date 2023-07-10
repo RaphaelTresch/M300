@@ -15,13 +15,13 @@ Dieser Code erstellt ein Volume mit dem Pfad /var/lib/mysql. Dadurch wird ein se
 ## Erstelle ein Image
 
 ```Script
-docker build -t mein-image .
+docker build -t mysqlvolume .
 ```
 ![](Screenshots/volumes.jpg)
 ## Erstelle ein Container
 
 ```Script
-docker run --name my_mysql_container -v /pfad/zum/lokalen/verzeichnis:/var/lib/mysql -d my_mysql_image
+docker run --name mysql_volume -v /pfad/zum/lokalen/verzeichnis:/var/lib/mysql -d mysqlvolume
 ```
 ![](Screenshots/volumes2.jpg)
 
@@ -29,16 +29,16 @@ docker run --name my_mysql_container -v /pfad/zum/lokalen/verzeichnis:/var/lib/m
 
 Um zu Testen, ob das Volume funktioniert und verbunden werden kann, dazu erstellen wir zuerst ein Volume
 ```Script
-docker exec my_mysql_container /bin/bash -c "echo 'test' > /var/lib/mysql/testfile"
+docker exec mysql_volume /bin/bash -c "echo 'test' > /var/lib/mysql/testfile"
 ```
 Nun Schauen wir mit folgendem Befehl, was in dem Volume enthalten ist
 ```Script
-docker exec my_mysql_container cat /var/lib/mysql/testfile
+docker exec mysql_volume cat /var/lib/mysql/testfile
 ```
 ![](Screenshots/volumes3.jpg)
 
 ### Testprotokoll
-| Nr | Testfall | Erwartetes Ergebnis | Tatsägchliches Ergebnis | Abgenommen? |
+| Nr | Testfall | Erwartetes Ergebnis | Tatsächliches Ergebnis | Abgenommen? |
 | -------- | -------- | -------- | -------- | -------- |
 | 1 | Funktionalität | Image und Container kann erstellt werden | Image und Container wird erstellt | Ja |
 | 2 | Funktionalität | Datei kann im Volume erstellt werden | Datei wird in Volume erstellt | Ja |

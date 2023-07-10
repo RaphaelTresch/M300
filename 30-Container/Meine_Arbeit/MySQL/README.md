@@ -29,7 +29,7 @@ RUN echo '<Directory /var/www/html>' >> /etc/apache2/sites-available/default-ssl
 ## Erstelle ein Image
 
 ```Script
-docker build -t mein-image .
+docker build -t mysql .
 ```
 ![](Screenshots/MySQL1.jpg)
 ## Erstelle ein Container
@@ -49,7 +49,7 @@ Nach der PW eingabe sollte es wie folgt ausehen
 ![](Screenshots/MySQL3.jpg)
 
 ### Testprotokoll
-| Nr | Testfall | Erwartetes Ergebnis | Tatsägchliches Ergebnis | Abgenommen? |
+| Nr | Testfall | Erwartetes Ergebnis | Tatsächliches Ergebnis | Abgenommen? |
 | -------- | -------- | -------- | -------- | -------- |
 | 1 | Funktionalität | Man kann sich über einen Befhel auf die DB verbinden | Es kann sich verbunden werden | Ja |
 | 2 | Funktionalität | PW kann eingegeben werden und wird akzeptiert | PW wird akzeptiert | Ja |

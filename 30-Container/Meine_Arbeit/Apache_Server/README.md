@@ -26,14 +26,14 @@ Die index.html-Datei ist eine statische HTML-Seite, die im Verzeichnis /var/www/
 ## Erstelle ein Image
 
 ```Script
-docker build -t mein-image .
+docker build -t apacheserver .
 ```
 ![](Screenshots/Apache1.jpg)
 
 ## Erstelle ein Container
 
 ```Script
-docker run -d --name mein-container -p 8080:80 mein-image
+docker run -d --name M300-Apache-Tresch -p 8080:80 apacheserver
 ```
 ![](Screenshots/Apache2.jpg)
 
@@ -43,7 +43,7 @@ Kontrollieren muss man natürlich auch, ob die Website funktioniert, folgend der
 ![](Screenshots/Apache3.jpg)
 
 ### Testprotokoll
-| Nr | Testfall | Erwartetes Ergebnis | Tatsägchliches Ergebnis | Abgenommen? |
+| Nr | Testfall | Erwartetes Ergebnis | Tatsächliches Ergebnis | Abgenommen? |
 | -------- | -------- | -------- | -------- | -------- |
 | 1 | Funktionalität | Website ist unter http://localhost:8080 erreichbar | Website ist erreichbar | Ja |
 | 2 | Replizierbarkeit | Gleiches file kann auf meinem Privaten PC gestartet werden | Wird auf Privatem PC gestartet | Ja |
