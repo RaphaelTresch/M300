@@ -44,4 +44,4 @@ Ich habe nun das Vagrant file angepasst, damit ein Webserver installiert wird, m
 
 ### Netzwerkplan
 Hier ein vereinfachter Netzwerkplan <br>
-![](Screenshots/plan.jpg)
+![](Screenshots/planfinish.jpg)
