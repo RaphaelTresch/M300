@@ -126,7 +126,7 @@ end
 
 ### Reverse Proxy
 ***
-Der Apache-Webserver kann auch als Reverse Proxy eingerichtet werden. 
+Der Apache-Webserver kann auch als Reverse Proxy eingerichtet werden. Die hat den Vorteil, dass man mit einfachen mittel (hier Apache webserver) arbeiten kann, welche auch schnell eingerichtet sind
 
 **Installation**
 Dazu müssen folgende Module installiert werden:
@@ -168,6 +168,16 @@ Vagrant.configure("2") do |config|
   SHELL
 end
 ```
+### Testprotokoll
+
+| Nr. | Testfall            | Erwartetes Ergebnis                                    | Tatsächliches Ergebnis             | Abgenommen? |
+|-----|---------------------|--------------------------------------------------------|------------------------------------|-------------|
+| 1   | Funktionalität      | Wenn man direkt von dem Lokalhost den Server pingen möchte wird dies nicht funktionieren | Hat nicht funktioniert             | Ja          |
+| 2   | Funktionalität      | Wenn ich vom Server den Lokalhost pinge, bekomme ich eine Antwort | Lokalhost hat auf Ping geantwortet | Ja          |
+| 3   | Funktionalität      | Regeln können durch Befehl gelöscht werden             | Regeln wurden gelöscht            | Ja          |
+| 4   | Reproduzierbarkeit | Vagrant File kann auf meinem Privaten PC ausgeführt werden und Dienste funktionieren | Funktioniert                        | Ja          |
+
+
 ### Es kann sein, dass ein Authentication Fehler von SSH auftritt, dazu die VM löschen und erneut Vagrant up ausführen
 Um zu beweisen, dass das System bei mir läuft, hier die Screenshots
 ![](screenshots/curl-f.jpg)
